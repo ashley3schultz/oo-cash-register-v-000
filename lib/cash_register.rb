@@ -1,5 +1,6 @@
 class CashRegister
   
+<<<<<<< HEAD
   attr_accessor :total, :discount, :quantity, :items, :last_item
   def initialize(e_discount = 0)
     @total = 0
@@ -38,4 +39,16 @@ class CashRegister
   def void_last_transaction
     @total -= @last_item.pop
   end 
+=======
+  attr_accessor :total, :employee_discount
+  
+  def initialize(e_discount = 0)
+    @total = 0
+    @discount = e_discount
+  end
+  
+  def add_item(title, price, qty = 1)
+    @total += price
+  end
+>>>>>>> 96b887f5a6c8854ee41202f6eb704d1703667f4f
 end
